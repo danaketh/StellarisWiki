@@ -1,0 +1,143 @@
+---
+title: "Advanced Afterburners"
+description: "This improved version of the standard afterburners provide an even greater boost to a ship's combat speed."
+sidebar_label: "Advanced Afterburners"
+tags: []
+---
+
+# Advanced Afterburners
+
+## Overview
+
+This improved version of the standard afterburners provide an even greater boost to a ship's combat speed.
+
+## Research Details
+
+<div className="stats-grid">
+  <div className="stat-card">
+    <div className="stat-label">Research Area</div>
+    <div className="stat-value">engineering</div>
+  </div>
+  <div className="stat-card">
+    <div className="stat-label">Tier</div>
+    <div className="stat-value">3</div>
+  </div>
+  <div className="stat-card">
+    <div className="stat-label">Base Cost</div>
+    <div className="stat-value">0</div>
+  </div>
+  <div className="stat-card">
+    <div className="stat-label">Weight</div>
+    <div className="stat-value">0</div>
+  </div>
+</div>
+
+## Prerequisites
+
+:::info Required Technologies
+The following technologies must be researched before this technology becomes available:
+
+- Technology A
+- Technology B
+- Technology C
+:::
+
+## Effects
+
+This technology provides the following bonuses:
+
+- **Effect Type 1**: +10% bonus
+- **Effect Type 2**: -5% penalty reduction
+- **Effect Type 3**: Unlocks new feature
+
+## Notes
+
+Additional information and tips about this technology can be added here.
+
+---
+
+<details>
+<summary>View Raw Data</summary>
+
+```json
+{
+  "area": "engineering",
+  "category": "propulsion",
+  "cost": 0,
+  "description": "This improved version of the standard afterburners provide an even greater boost to a ship's combat speed.",
+  "icon": "tech_afterburners_2",
+  "isDangerous": false,
+  "isEvent": false,
+  "isGestalt": false,
+  "isMegacorp": false,
+  "isRare": false,
+  "isRepeatable": false,
+  "isReverse": false,
+  "isStartTech": false,
+  "key": "tech_afterburners_2",
+  "level": 3,
+  "levels": 0,
+  "name": "Advanced Afterburners",
+  "prerequisites": [
+    "tech_afterburners_1",
+    "tech_thrusters_3"
+  ],
+  "sourceFile": "00_eng_tech.txt",
+  "tier": 3,
+  "weight": 0
+}
+```
+
+</details>
+
+<style jsx>{`
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .stat-card {
+    background: var(--ifm-background-surface-color);
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: all 0.2s ease;
+  }
+
+  [data-theme='dark'] .stat-card {
+    border-color: rgba(0, 212, 255, 0.2);
+  }
+
+  .stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  [data-theme='dark'] .stat-card:hover {
+    border-color: rgba(0, 212, 255, 0.4);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--ifm-color-emphasis-600);
+    margin-bottom: 0.5rem;
+  }
+
+  [data-theme='dark'] .stat-label {
+    color: #8fa3b8;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--ifm-color-primary);
+    line-height: 1.2;
+  }
+`}</style>
+

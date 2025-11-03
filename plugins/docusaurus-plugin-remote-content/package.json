@@ -1,0 +1,14 @@
+{
+  "name": "docusaurus-plugin-remote-content",
+  "version": "1.0.0",
+  "description": "Docusaurus plugin to fetch remote JSON files and generate pages with custom templates",
+  "main": "src/index.js",
+  "keywords": [
+    "docusaurus",
+    "plugin",
+    "remote-content",
+    "json"
+  ],
+  "author": "Daniel Tlach",
+  "license": "MIT"
+}
