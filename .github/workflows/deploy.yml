@@ -5,6 +5,19 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      triggered_by:
+        description: 'Repository that triggered this workflow'
+        required: false
+        default: 'manual'
+      commit_sha:
+        description: 'Commit SHA from source repository'
+        required: false
+      commit_message:
+        description: 'Commit message from source repository'
+        required: false
+  repository_dispatch:
+    types: [ trigger-build ]
 
 permissions:
   contents: read
